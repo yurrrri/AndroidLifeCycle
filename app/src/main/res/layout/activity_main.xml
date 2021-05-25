@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="사용자 이름"
+            android:textColor="@color/mypick_blue"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="님의 Pick"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnRestaurantList"
+            android:layout_width="wrap_content"
+            android:layout_height="400px"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="onClick"
+            android:text="맛집"
+            android:textColor="#2DB4F1"
+            android:textSize="24sp"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnCafeList"
+            android:layout_width="wrap_content"
+            android:layout_height="400px"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="onClick"
+            android:text="카페"
+            android:textColor="#2DB4F1"
+            android:textSize="24sp"
+            app:layout_columnWeight="1" />
+
+        <Button
+            android:id="@+id/btnAddCat"
+            android:layout_width="wrap_content"
+            android:layout_height="400px"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="onClick"
+            android:text="+"
+            android:textColor="#2DB4F1"
+            android:textSize="24sp"
+            app:layout_columnWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

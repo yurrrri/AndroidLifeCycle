@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@null"
+        android:checked="true"
+        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        android:gravity="center"
+        android:text="부산 해운대 - 청우"
+        android:textSize="24sp" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@null"
+        android:checked="true"
+        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        android:gravity="center"
+        android:text="서울 합정 - 돼지대학교"
+        android:textSize="24sp" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@null"
+        android:checked="true"
+        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        android:gravity="center"
+        android:text="여수 - 대성식당"
+        android:textSize="24sp" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@null"
+        android:checked="true"
+        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        android:gravity="center"
+        android:text="부산 해운대 - 의령식당"
+        android:textSize="24sp" />
+
+</LinearLayout>
